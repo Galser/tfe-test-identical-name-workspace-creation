@@ -13,13 +13,13 @@ variable "org" {
 resource "random_pet" "workspace" { }
 
 # LOCALS
-local "workspace_to_create" {
-  value = random_pet.workspace.id
+locals {
+  workspace_to_create = random_pet.workspace.id
 }
 
 provider "tfe" {
-  hostname = "${var.hostname}"
-#  token    = "${var.token}". --> oinly if we really want it
+  hostname = var.hostname
+#  token    = var.token. --> oinly if we really want it
 #  for the test we assume it is coming from TFE_TOKEN env var
   version  = "~> 0.15.0"
 }
