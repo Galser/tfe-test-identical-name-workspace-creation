@@ -17,6 +17,8 @@ So there is no **BOLD** requirement for it to be unique, yet normally when you a
 
 While we have a screenshot : 
 
+![identically named_workspaces screenshot](identically_named_workspaces.png)
+
 # Test
 
 # TODO
