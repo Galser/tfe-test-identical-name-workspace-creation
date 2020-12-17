@@ -29,12 +29,12 @@ provider "tfe" {
 # Creating workspace 1 
 resource "tfe_workspace" "ws-test-main" {
   name         = local.workspace_to_create
-  organization = var.organization
+  organization = var.org
 }
 
 
 # Creating workspace 1 
 resource "tfe_workspace" "ws-test-doppelganger" {
   name         = local.workspace_to_create
-  organization = var.organization
+  organization = var.org
 }
