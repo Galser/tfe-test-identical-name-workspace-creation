@@ -97,7 +97,7 @@ Terraform will perform the following actions:
 Plan: 3 to add, 0 to change, 0 to destroy.
 ```
 
-And apply, as expected gails on 2-nd workspace creation : 
+And apply, as expected fails on 2-nd workspace creation : 
 
 ```bash
  
